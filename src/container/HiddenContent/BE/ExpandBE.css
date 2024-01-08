@@ -1,0 +1,68 @@
+/* ExpandTCH.css */
+
+/* Add transitions to the toggle button */
+.toggle_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.3s ease; /* Add a transition to the transform property */
+}
+
+/* Rotate the button when the content is shown */
+.toggle_button.active {
+  transform: rotate(180deg);
+}
+
+/* Style for the dropdown container */
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8ff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 16px;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease; /* Add transition for opacity */
+  max-height: 0; /* Initially set the max-height to 0 */
+}
+
+/* Set the height to auto when the dropdown is active */
+.dropdown.active {
+  opacity: 1;
+}
+
+/* Style for the dropdown content */
+.dropdown img {
+  width: 120px;
+  height: 100px;
+  border-radius: 10%;
+}
+
+/* Style for the dropdown content text */
+.dropdown p {
+  text-align: left;
+  margin-top: 8px; /* Add some top margin to separate text from the link */
+}
+
+/* Style for the link */
+.dropdown a {
+  text-decoration: none;
+  color: #0078d4; /* Adjust link color as needed */
+  transition: color 0.3s ease; /* Add a color transition */
+}
+
+/* Change link color on hover */
+.dropdown a:hover {
+  color: #004c8c; /* Adjust link color on hover */
+}
+
+.icon {
+  width: 47px;
+  height: 20px;
+  padding: none;
+}

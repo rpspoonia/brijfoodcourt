@@ -1,0 +1,21 @@
+/* Add transitions to the toggle button
+.toggle_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s ease; Add a transition to the transform property
+  }
+  
+  Rotate the button when the content is shown
+  .toggle_button.active {
+    transform: rotate(180deg);
+  }
+
+  .dropdown img{
+    width: 120px;
+    height: 100px;
+    border-radius: 10%;
+    padding: 5px;
+  }
+   */
