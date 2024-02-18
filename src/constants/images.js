@@ -33,6 +33,7 @@ import TFB from '../assets/TFB.png'
 import UP85 from '../assets/UP85.png'
 import quote from '../assets/quote.png';
 import qr from '../assets/QR.png';
+import rambabu from '../assets/RamBabu.png'
 import VegGrill from '../assets/VegGrill.png'
 import zomato from '../assets/Zomato.png'
 
@@ -72,6 +73,7 @@ const images = {
   UP85,
   quote,
   qr,
+  rambabu,
   VegGrill,
   zomato
 };

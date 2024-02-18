@@ -1,3 +1,5 @@
+/* SpecialMenu.css */
+
 .app__specialMenu {
   flex-direction: column;
   background: white;
@@ -11,11 +13,10 @@
 .app__specialMenu-menu {
   width: 100%;
   margin: 2rem 0;
-
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  grid-template-rows: repeat(5, auto); /* 5 rows */
-  grid-gap: 2rem; /* Gap between grid items */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-gap: 2rem;
 }
 
 .app__specialMenu-menu_heading {
@@ -27,18 +28,20 @@
   color: var(--color-black);
 }
 
-.app__specialMenu-menu_wine,
-.app__specialMenu-menu_cocktails {
+.app__specialMenu-menu_wine {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center; /* Center-align text */
+  text-align: center;
 }
 
 .app__specialMenu-menu_img {
-  width: 19rem;
-  height: 16rem;
-  /* max-width: 390px; Limit image width */
+  position: relative;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
 }
 
 .app__specialMenu-menu_img img {
@@ -47,7 +50,32 @@
   border-radius: 10px;
 }
 
+.dropdown-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f8ff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.img-container:hover .dropdown-content {
+  opacity: 1;
+}
+
+.icon {
+  width: 47px !important;
+  height: 20px;
+  padding: none;
+}
+
 /* Media queries for responsiveness */
+
 @media screen and (min-width: 2000px) {
   .app__specialMenu-menu_img {
     width: 17rem;
@@ -57,7 +85,7 @@
 
 @media screen and (max-width: 1150px) {
   .app__specialMenu-menu {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .app__specialMenu-menu_img {
@@ -69,7 +97,7 @@
 
 @media screen and (max-width: 650px) {
   .app__specialMenu-menu {
-    grid-template-columns: 1fr; /* 1 column for mobile screens */
+    grid-template-columns: 1fr;
   }
 
   .app__specialMenu-menu_img {
