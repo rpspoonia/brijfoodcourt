@@ -3,6 +3,10 @@ import { SubHeading } from "../../components";
 import { images } from "../../constants";
 import "./SpecialMenu.css";
 
+const handleZomatoClick = () => {
+  alert("Zomato not available on this restaurant");
+};
+
 const SpecialMenu = () => (
   <div className="app__specialMenu section__padding" id="dine">
     <div className="app__specialMenu-title">
@@ -52,17 +56,13 @@ const SpecialMenu = () => (
               <p>
                 <strong>Cuisines</strong> <br /> Juice, Cold Drink, Wafers
                 <br />
-                <a
-                  href="https://example.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={images.zomato}
-                    alt="zomato_image"
-                    className="icon"
-                  />
-                </a>
+                {/* Updated the Zomato icon to have an onClick event */}
+                <img
+                  src={images.zomato}
+                  alt="zomato_image"
+                  className="icon"
+                  onClick={handleZomatoClick}
+                />
               </p>
             </div>
           </div>
@@ -85,17 +85,12 @@ const SpecialMenu = () => (
                 <strong>Cuisines</strong> <br /> Indian Sweets, Mithai, Street
                 Food
                 <br />
-                <a
-                  href="https://example.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={images.zomato}
-                    alt="zomato_image"
-                    className="icon"
-                  />
-                </a>
+                <img
+                  src={images.zomato}
+                  alt="zomato_image"
+                  className="icon"
+                  onClick={handleZomatoClick}
+                />
               </p>
             </div>
           </div>
@@ -170,17 +165,12 @@ const SpecialMenu = () => (
               <p>
                 <strong>Cuisines</strong> <br /> Chaap
                 <br />
-                <a
-                  href="https://example.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={images.zomato}
-                    alt="zomato_image"
-                    className="icon"
-                  />
-                </a>
+                <img
+                  src={images.zomato}
+                  alt="zomato_image"
+                  className="icon"
+                  onClick={handleZomatoClick}
+                />
               </p>
             </div>
           </div>
@@ -199,17 +189,12 @@ const SpecialMenu = () => (
               <p>
                 <strong>Cuisines </strong> <br /> Chinese
                 <br />
-                <a
-                  href="https://example.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={images.zomato}
-                    alt="zomato_image"
-                    className="icon"
-                  />
-                </a>
+                <img
+                  src={images.zomato}
+                  alt="zomato_image"
+                  className="icon"
+                  onClick={handleZomatoClick}
+                />
               </p>
             </div>
           </div>
@@ -227,17 +212,12 @@ const SpecialMenu = () => (
               <p>
                 <strong>Cuisines</strong> <br /> Pasta, Pizza, Garlic Bread
                 <br />
-                <a
-                  href="https://example.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={images.zomato}
-                    alt="zomato_image"
-                    className="icon"
-                  />
-                </a>
+                <img
+                  src={images.zomato}
+                  alt="zomato_image"
+                  className="icon"
+                  onClick={handleZomatoClick}
+                />
               </p>
             </div>
           </div>
@@ -255,17 +235,12 @@ const SpecialMenu = () => (
               <p>
                 <strong>Cuisines</strong> <br /> Parathe
                 <br />
-                <a
-                  href="https://example.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={images.zomato}
-                    alt="zomato_image"
-                    className="icon"
-                  />
-                </a>
+                <img
+                  src={images.zomato}
+                  alt="zomato_image"
+                  className="icon"
+                  onClick={handleZomatoClick}
+                />
               </p>
             </div>
           </div>
