@@ -224,7 +224,7 @@ const SpecialMenu = () => (
         </div>
       </div>
 
-      <div className="app__specialMenu-menu_wine flex__center">
+      <div className="app__specialMenu-menu_wine">
         <p className="app__specialMenu-menu_heading">Rambabu ke Parathe</p>
         <div className="app__specialMenu-menu_img">
           <div className="img-container">
